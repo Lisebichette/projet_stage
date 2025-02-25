@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(0, 187, 255);
+            padding: 10px;
+            width: 100%;
+        }
+
+        .header-info {
+            color: blue;
+            cursor: pointer;
+        }
+
+        .header-log {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .theme1 {
+            color: white;
+            background-color: blue;
+        }
+
+        .theme2 {
+            background-color: white;
+        }
+
+        .search {
+            background-image: url('./exemple1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 25px;
+            padding: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+
+        .search-bar {
+            border: none;
+            outline: none;
+            padding: 8px;
+            border-radius: 25px 0 0 25px;
+            width: 200px;
+        }
+
+        .search-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 0 25px 25px 0;
+            cursor: pointer;
+        }
+
+        .search-button:hover {
+            background: #0056b3;
+        }
+
+        .container {
+            background: rgba(128, 128, 128, 0.498);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .info-container {
+            background-color: #0056b3;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .info-entreprises {
+            background: #eaf3ff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 220px;
+            max-width: 250px;
+        }
+
+        .info-entreprises p {
+            margin: 2px 0;
+            font-size: 14px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .another-container {
+            width: 100%;
+            height: 600px;
+            background-color: rgb(18, 12, 12);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .cadre {
+            display: flex;
+            gap: 20px;
+            width: 90%;
+            height: 250px;
+            background-color: blue;
+            padding: 15px;
+            border-radius: 8px;
+            color: white;
+            align-items: center;
+        }
+
+        .cadre img {
+            height: 200px;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer p {
+            margin-bottom: 5px;
+        }
+        .bef-footer{
+            background-color: orange;
+            height: 90px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center ;
+            align-items: center;
+            width: 25%;
+            border: 0px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <span>CESI</span>
+        <span class="header-info">Accueil</span>
+        <span class="header-info">Offres</span>
+        <span class="header-info">Entreprises</span>
+        <span class="header-info">Wishlist</span>
+        <button class="header-log theme1">Se connecter</button>
+        <button class="header-log theme2">S'inscrire</button>
+    </div>
+
+    <div class="search">
+        <h2>Bienvenue sur CESI ta chance</h2>
+        <p>Trouvez le stage qui vous correspond</p>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Rechercher un stage...">
+            <button class="search-button">🔍</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Explorez les entreprises</h1>
+        <p>Découvrez les entreprises où les anciens étudiants ont effectué leurs stages</p>
+
+        <div class="info-container">
+            <div class="info-entreprises">
+                <p>Thales</p>
+                <p>Data IA</p>
+                <p>Paris</p>
+                <p>1000 étudiants</p>
+            </div>
+            <div class="info-entreprises">
+                <p>Google</p>
+                <p>Développement</p>
+                <p>San Francisco</p>
+                <p>5000 étudiants</p>
+            </div>
+            <div class="info-entreprises">
+                <p>Microsoft</p>
+                <p>Cyber Sécurité</p>
+                <p>Paris</p>
+                <p>2000 étudiants</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="another-container">
+        <div class="cadre">
+            <img src="./exemple1.jpg" alt="Image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptas saepe error.</p>
+        </div>
+        <div class="cadre">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptas saepe error.</p>
+
+            <img src="./exemple1.jpg" alt="Image">
+        </div>
+    </div>
+
+    <div class="bef-footer">
+        <div class="info">
+            <p>uyny</p>
+            <p>uyny</p>
+            <p>uyny</p>
+        </div>
+        <div class="info" style="border-left: 1px solid black;border-right: 1px solid black;">
+            <p>uyny</p>
+            <p>uyny</p>
+            <p>uyny</p>
+        </div>
+        <div class="info" style="border-right: 1px solid black;">
+            <p>uyny</p>
+            <p>uyny</p>
+            <p>uyny</p>
+        </div>
+        <div class="info">
+            <p>uyny</p>
+            <p>uyny</p>
+            <p>uyny</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>À propos</p>
+        <p>Mentions légales</p>
+        <p>Contact</p>
+    </div>
+
+</body>
+
+</html>
