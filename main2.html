@@ -29,6 +29,7 @@
         .header-info {
             color: blue;
             cursor: pointer;
+            text-decoration: none;
         }
 
         .header-log {
@@ -68,7 +69,7 @@
             border-radius: 25px;
             padding: 5px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            width: 250px;
+            width: 350px;
         }
 
         .search-bar {
@@ -76,7 +77,7 @@
             outline: none;
             padding: 8px;
             border-radius: 25px 0 0 25px;
-            width: 200px;
+            width: 350px;
         }
 
         .search-button {
@@ -156,10 +157,13 @@
         }
 
         .footer {
-            background: #222;
+            background: #8eb811;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 10px;
+            display: flex ;
+            justify-content: center;
+            align-items: center;
         }
 
         .footer p {
@@ -172,29 +176,34 @@
             flex-direction: row;
             width: 100%;
         }
+        .footer-info{
+            display: flex ;
+            justify-content: center ;
+            align-items: center ;
+            width: 20%;
+            height: 100%;
+        }
         .info{
             display: flex;
             flex-direction: column;
             justify-content: center ;
             align-items: center;
             width: 25%;
-            border: 0px solid black;
+            border: 0px;
         }
     </style>
 </head>
 
 <body>
-
     <div class="header">
         <span>CESI</span>
-        <span class="header-info">Accueil</span>
-        <span class="header-info">Offres</span>
-        <span class="header-info">Entreprises</span>
-        <span class="header-info">Wishlist</span>
+        <a href="" class="header-info" >Accueil</a>
+        <a href="" class="header-info" >Offres</a>
+        <a href="" class="header-info" >Wishlist</a>
+        <a href="" class="header-info" >Entreprises</a>
         <button class="header-log theme1">Se connecter</button>
         <button class="header-log theme2">S'inscrire</button>
     </div>
-
     <div class="search">
         <h2>Bienvenue sur CESI ta chance</h2>
         <p>Trouvez le stage qui vous correspond</p>
@@ -203,7 +212,6 @@
             <button class="search-button">🔍</button>
         </div>
     </div>
-
     <div class="container">
         <h1>Explorez les entreprises</h1>
         <p>Découvrez les entreprises où les anciens étudiants ont effectué leurs stages</p>
@@ -229,7 +237,6 @@
             </div>
         </div>
     </div>
-
     <div class="another-container">
         <div class="cadre">
             <img src="./exemple1.jpg" alt="Image">
@@ -241,22 +248,21 @@
             <img src="./exemple1.jpg" alt="Image">
         </div>
     </div>
-
     <div class="bef-footer">
         <div class="info">
             <p>uyny</p>
             <p>uyny</p>
             <p>uyny</p>
         </div>
-        <div class="info" style="border-left: 1px solid black;border-right: 1px solid black;">
-            <p>uyny</p>
-            <p>uyny</p>
-            <p>uyny</p>
+        <div class="info" >
+            <p  style=" display: flex; justify-content: center; width: 100%;border-left: 1px solid black;border-right: 1px solid black;">uyny</p>
+            <p style=" display: flex; justify-content: center; width: 100%; border-left: 1px solid black;border-right: 1px solid black;">uyny</p>
+            <p style=" display: flex; justify-content: center; width: 100%;border-left: 1px solid black;border-right: 1px solid black;">uyny</p>
         </div>
-        <div class="info" style="border-right: 1px solid black;">
-            <p>uyny</p>
-            <p>uyny</p>
-            <p>uyny</p>
+        <div class="info" >
+            <p style=" display: flex; justify-content: center; width: 100%;border-left: 1px solid black;border-right: 1px solid black;">uyny</p>
+            <p style=" display: flex; justify-content: center; width: 100%;border-left: 1px solid black;border-right: 1px solid black;">uyny</p>
+            <p style=" display: flex; justify-content: center; width: 100%;border-left: 1px solid black;border-right: 1px solid black;">uyny</p>
         </div>
         <div class="info">
             <p>uyny</p>
@@ -265,11 +271,62 @@
         </div>
 
     </div>
-
     <div class="footer">
-        <p>À propos</p>
-        <p>Mentions légales</p>
-        <p>Contact</p>
+        <div class="footer-info">
+
+            <img src="exemple.jpg" alt="" style="height: 100px;">
+
+        </div>
+        <div class="footer-info">
+
+            <p>jfkdjfkd <br>
+                kjskjds <br>
+                kjskjds <br>
+                kjskjds <br>
+                kjskjds <br>
+                sdshjd
+            </p>
+
+        </div>
+        <div class="footer-info">
+
+            <p>jfkdjfkd <br>
+                kjskjds <br>
+                kjskjds <br>
+                kjskjds <br>
+                kjskjds <br>
+                sdshjd
+            </p>
+
+        </div>
+        <div class="footer-info">
+
+            <p>jfkdjfkd <br>
+                kjskjds <br>
+                kjskjds <br>
+                kjskjds <br>
+                kjskjds <br>
+                sdshjd
+            </p>
+
+        </div>
+        <div class="footer-info">
+
+            <p>jfkdjfkd <br>
+                kjskjds <br>
+                kjskjds <br>
+                kjskjds <br>
+                kjskjds <br>
+                sdshjd
+            </p>
+
+        </div>
+        <div class="footer-info">
+
+            <img src="exemple.jpg" alt="" style="height: 100px;">
+
+        </div>
+
     </div>
 
 </body>
