@@ -47,7 +47,12 @@
         .theme2 {
             background-color: white;
         }
-
+        .affiche{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0px;
+        }
         .search {
             background-image: url('./exemple1.jpg');
             background-size: cover;
@@ -204,9 +209,14 @@
         <button class="header-log theme1">Se connecter</button>
         <button class="header-log theme2">S'inscrire</button>
     </div>
+
     <div class="search">
-        <h2>Bienvenue sur CESI ta chance</h2>
-        <p>Trouvez le stage qui vous correspond</p>
+        <div class="affiche" style="text-align: left; padding: 0px; margin-top: -200px;">
+            <h2>Bienvenue sur CESI ta chance</h2>
+        </div>
+        <div class="affiche" style="margin: 20px; font-size: 25px;">
+            <p>Trouvez le stage qui vous correspond</p>
+        </div>
         <div class="search-container">
             <input type="text" class="search-bar" placeholder="Rechercher un stage...">
             <button class="search-button">🔍</button>
